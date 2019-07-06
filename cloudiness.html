@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Visualization Latitude</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body style="background-color:#F2F9F7">
+        <nav class=" navbar navbar_default">
+            <div class="container">
+                <div class="navbar_header">
+                    <a class="navbar_logo" href="index.html"><span class="nav_color">Latitude</span></a>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown_toggle" data-toggle="dropdown" aria-expanded="false">Plots<span class="caret"></span></a>
+                        <ul class="dropdown_menu">
+                            <li><a href="temperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <div class = "container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="block_default">
+                        <div class="block_body">
+
+                            <h2>Cloudiness</h2>
+                            <hr>
+                            <img class="cloudiness image" src="Resources/assets/images/Latitude_vs_Cloudiness.png" alt="cloudiness image" width="600" height="500">
+                            <br><p>The above scatter plot shows widen distribution but through the plot we can see that there are some cities which has 0% of cloud.</p>
+                            <br>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block_default">
+                        <div class="block_body">
+
+                            <h2>Visualization</h2>
+                            <hr>
+
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-default" src="Resources/assets/images/Latitude_vs_MaxTemp.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-default" src="Resources/assets/images/Latitude_vs_Humidity.png" style="width:100%" alt=""></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-default" src="Resources/assets/images/Latitude_vs_Cloudiness.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="windspeed.html"><img class = "img img-default" src="Resources/assets/images/Latitude_vs_WindSpeed.png" style="width:100%" alt=""></a></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>    
+    </body>
+</html>
